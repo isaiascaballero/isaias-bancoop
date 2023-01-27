@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.grid-container{
+    display: grid;
+    gap: 10px;
+    
+    grid-template-areas: 
+    "encabezado"
+    "contenedor"
+    "pie";
+}
+@media (min-width: 1080px){
+    .grid-container{
+        grid-template:
+        "encabezado" 500px
+        "contenedor" 500px
+        "pie" 200px /
+        auto;
+    }
+}
+
+.encabezado{
+    grid-area: encabezado;
+    
+    display: grid;
+    grid-template-areas: 
+    "ban"
+    "nave";
+}
+@media (min-width: 1080px){
+    .encabezado{
+        grid-template: 
+        "ban" 400px
+        "nave" 100px /
+        auto
+    }
+}
+.ban{
+    grid-area: ban;
+    
+    background-size: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+.ban{
+    background-image: url(../image/Imagen\ de\ WhatsApp\ 2023-01-27\ a\ las\ 11.03.19.jpg);
+    background-size: 96%;
+}
+.nave{
+    grid-area: nave;
+    background-color: rgb(245, 221, 6);
+    border-top: 6px solid;
+    display: flex;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.nave>li{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 1280px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.nave>li>article{
+    width: 300px;
+    height:50px;
+    border-right: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nave>li>article>a{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.contenedor{
+    grid-area: contenedor;
+    gap: 10px;
+    display: grid;
+    grid-template-areas: 
+    "contenedor-text"
+    "datos";
+}
+@media (min-width: 1080px){
+    .contenedor{
+        grid-template: 
+        "datos contenedor-text" 500px /
+        auto 900px;
+    }
+}
+.contenedor-text{
+ grid-area: contenedor-text;
+ border: 1px solid white;
+ display: flex;
+ gap: 10px;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.contenedor-text>article{
+    width: 49%;
+    height: 235px;
+    border: 1px solid white;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.a{
+    display: flex;
+    gap: 5px;
+border-top-left-radius: 30px;
+}
+.a>header{
+    background-color: black;
+    color: gray;
+    width: 100%;
+    height: 2rem;
+    border-top-left-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a>main{
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a>main>img{
+    background-image: url(../image/gold-mastercard-1280x720.png);
+    width: 200px;
+    height: 100px;
+    background-size: 100%;
+
+}
+.a>footer{
+    height: 2rem;
+    width: 80%;
+    
+}
+.b{
+border-top-right-radius: 30px;
+}
+.b>header{
+    background-color: black;
+    color: gray;
+    width: 100%;
+    height: 2rem;
+    border-top-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b>main{
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b>main>img{
+    background-image: url(../image/30523.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+}
+.b>footer{
+    height: 2rem;
+    width: 80%;
+    
+}
+.c{
+border-bottom-left-radius: 30px;
+}
+.c>header{
+    background-color: black;
+    color: gray;
+    width: 100%;
+    height: 2rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c>main{
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c>main>img{
+    background-image: url(../image/Keys-Background-PNG-Image.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+}
+.c>footer{
+    height: 2rem;
+    width: 80%;
+    
+}
+.d{
+border-bottom-right-radius: 30px;
+}
+.d>header{
+    background-color: black;
+    color: gray;
+    width: 100%;
+    height: 2rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d>main{
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d>main>img{
+    background-image: url(../image/1f3e0.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+}
+.d>footer{
+    height: 2rem;
+    width: 80%;
+    
+}
+.contenedor-text>article>main{
+    width: 95%;
+    display: grid;
+    gap: 10px;
+}
+
+.datos{
+ grid-area: datos;
+ border-radius: 30px;
+ display: flex;
+ flex-direction: column;
+ gap: 40px;
+}
+.cuenta{
+    width: 100%;
+    height: 45%;
+   
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    
+}
+.cuenta>header{
+    background-color: black;
+    color: white;
+    height: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuenta>main{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.cuenta>main>div{
+    display: flex;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.cuenta>footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuenta>footer>article{
+    width: 100px;
+    border: 3px solid;
+    text-align: center;
+    background-color: yellow;
+}
+.estadistica{
+    width: 100%;
+    height: 45%;
+    
+}
+.estadistica>header{
+    background-color: black;
+    color: goldenrod;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.estadistica>section{
+    width: 100%;
+    height: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(61, 56, 56);
+}
+.estadistica>section>h3{
+    color: goldenrod;
+}
+.estadistica>section>article{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    border-bottom: 1px solid gray;
+    width: 80%;
+}
+.pie{
+    grid-area: pie;
+    background-color: black;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     color: white;
+}
